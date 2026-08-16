@@ -1558,14 +1558,6 @@ changes:
 
 Enable experimental WebAssembly System Interface (WASI) support.
 
-### `--experimental-web-worker`
-
-<!-- YAML
-added: REPLACEME
--->
-
-Enable experimental support for the Web Worker API.
-
 ### `--experimental-worker-inspection`
 
 <!-- YAML
@@ -2153,6 +2145,20 @@ changes:
 -->
 
 Disable the experimental [`node:sqlite`][] module.
+
+### `--no-experimental-web-worker`
+
+<!-- YAML
+added: REPLACEME
+changes:
+  - version: REPLACEME
+    pr-url: https://github.com/nodejs/node/pull/65323
+    description: This feature is now enabled by default.
+-->
+
+> Stability: 1.1 - Active Development
+
+Disable support for the Web Worker API.
 
 ### `--no-experimental-webstorage`
 
@@ -3922,7 +3928,6 @@ one is included in the list below.
 * `--experimental-vfs`
 * `--experimental-vm-modules`
 * `--experimental-wasi-unstable-preview1`
-* `--experimental-web-worker`
 * `--experimental-websocket`
 * `--force-context-aware`
 * `--force-fips`
@@ -3955,6 +3960,7 @@ one is included in the list below.
 * `--no-experimental-global-navigator`
 * `--no-experimental-sqlite`
 * `--no-experimental-strip-types`
+* `--no-experimental-web-worker`
 * `--no-experimental-webstorage`
 * `--no-extra-info-on-fatal-exception`
 * `--no-force-async-hooks-checks`

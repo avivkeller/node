@@ -1319,10 +1319,14 @@ A browser-compatible implementation of {WebSocket}.
 
 <!-- YAML
 added: REPLACEME
+changes:
+  - version: REPLACEME
+    pr-url: https://github.com/nodejs/node/pull/65323
+    description: This feature is now enabled by default.
 -->
 
-> Stability: 1 - Experimental. Enable this API with the
-> [`--experimental-web-worker`][] CLI flag.
+> Stability: 1.1 - Active development. Disable this API with the
+> [`--no-experimental-web-worker`][] CLI flag.
 
 A mostly browser-compatible implementation of Web Workers of the [HTML Standard][],
 implemented on top of [`node:worker_threads`][]. Threads created with it
@@ -1464,9 +1468,9 @@ A browser-compatible implementation of [`WritableStreamDefaultWriter`][].
 [RFC 5646]: https://www.rfc-editor.org/rfc/rfc5646.txt
 [Web Crypto API]: webcrypto.md
 [`--experimental-eventsource`]: cli.md#--experimental-eventsource
-[`--experimental-web-worker`]: cli.md#--experimental-web-worker
 [`--localstorage-file`]: cli.md#--localstorage-filefile
 [`--no-experimental-global-navigator`]: cli.md#--no-experimental-global-navigator
+[`--no-experimental-web-worker`]: cli.md#--no-experimental-web-worker
 [`--no-experimental-webstorage`]: cli.md#--no-experimental-webstorage
 [`ByteLengthQueuingStrategy`]: webstreams.md#class-bytelengthqueuingstrategy
 [`CompressionStream`]: webstreams.md#class-compressionstream
